@@ -1,0 +1,18 @@
+# Armstrong-Number
+def armstrong_mu(sayi):
+    basamaklar = str(sayi)
+    basamak_sayisi = len(basamaklar)
+    toplam = 0
+
+    for rakam in basamaklar:
+        toplam += int(rakam) ** basamak_sayisi
+
+    return toplam == sayi
+
+
+sayi = int(input("Bir sayı giriniz: "))
+
+if armstrong_mu(sayi):
+    print(sayi, "bir Armstrong sayısıdır.")
+else:
+    print(sayi, "bir Armstrong sayısı değildir.")
